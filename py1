@@ -1,4 +1,4 @@
 x, y = 5, 10
 print("Before:", x, y)
 x, y = y, x
-print("After: ", x, 
+print("After: ", x, y)
