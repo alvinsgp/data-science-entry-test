@@ -8,7 +8,6 @@ replace_val = 0
 new_all = [replace_val for _ in lst]
 print("All replaced (new):", new_all)
 
-# Replace every element in-place
-for i in range(len(lst)):
-    lst[i] = replace_val
-print("All replaced (in-place):", lst)
+target = 3
+replaced = [replace_val if x == target else x for x in lst]
+print(f"Replace only {target} with {replace_val}:", replaced)
