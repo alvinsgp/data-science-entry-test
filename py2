@@ -1,0 +1,14 @@
+# create a list of numbers
+lst = [1, 2, 3, 4, 5]
+print("Original:", lst)
+
+replace_val = 0
+
+# Replace every element (returns a new list)
+new_all = [replace_val for _ in lst]
+print("All replaced (new):", new_all)
+
+# Replace every element in-place
+for i in range(len(lst)):
+    lst[i] = replace_val
+print("All replaced (in-place):", lst)
