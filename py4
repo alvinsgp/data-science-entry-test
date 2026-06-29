@@ -1,0 +1,16 @@
+def reverse_string(s: str) -> str:
+    """
+    Reverse the input string `s`.
+
+    Raises:
+        TypeError: If `s` is not a str.
+    Returns:
+        The reversed string.
+    """
+    if not isinstance(s, str):
+        raise TypeError(f"Expected `s` to be str, got {type(s).__name__}")
+    return s[::-1]
+
+print(reverse_string("hello"))      # -> "olleh"
+print(reverse_string(""))           # -> ""
+print(reverse_string("AB"))          # -> "BA"
